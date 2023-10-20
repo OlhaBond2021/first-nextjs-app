@@ -79,8 +79,8 @@ export async function getStaticProps() {
         id: meetup._id.toString(),
       })),
     },
-    revalidate: 10, //unlock a feature called incremental static generation, очікує число - час в секундах, скільки nextjs буде чекати, поки він перегенерує цю сторінку для вхідного запиту
-  }; // в даному випадку означає, що сторінка з revalidate: 10 буде регенеруватися на сервері кожні 10 секунд, якщо на неї надходитимуть запити
+    revalidate: 1, //unlock a feature called incremental static generation, очікує число - час в секундах, скільки nextjs буде чекати, поки він перегенерує цю сторінку для вхідного запиту
+  }; // в даному випадку означає, що сторінка з revalidate: 1 - буде регенеруватися на сервері кожні 1 секунд, якщо на неї надходитимуть запити
 }
 
 export default HomePage;
